@@ -7,7 +7,7 @@ def hello_world(request):
     name = os.environ.get('NAME')
     if name == None or len(name) == 0:
         name = "world"
-    message = "Hello, Viraj" + name + "!\n"
+    message = "Hello, Viraj" + "!\n In case you forget why this endpoint exists, you built this to test out AppRunner!"
     return Response(message)
 
 if __name__ == '__main__':
